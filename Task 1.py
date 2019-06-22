@@ -61,7 +61,7 @@ def reach_philosophy(url, max_iter):
             #Check if the first link is a Wikipedia link
             use_link = links[0]
             for link in links:
-                if ("/wiki/" in link):
+                if ("/wiki/" in str(link)):
                     use_link = link
                     break
                 else:
